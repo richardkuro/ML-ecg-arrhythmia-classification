@@ -1,0 +1,93 @@
+[
+  {
+    "model": "resnet1d",
+    "params": 1868965,
+    "f32_kb": 7300.6,
+    "int8_kb": 1825.2,
+    "ram_kb": 2417.2,
+    "pc_ms": 4.346,
+    "esp32_f32_ms": 434.6,
+    "esp32_int8_ms": 54.3,
+    "f1_macro": 0.9312,
+    "verdict": "\u274c  NO-GO",
+    "reason": "RAM overflow (2417KB > 320KB)"
+  },
+  {
+    "model": "tcn",
+    "params": 137349,
+    "f32_kb": 536.5,
+    "int8_kb": 134.1,
+    "ram_kb": 185.1,
+    "pc_ms": 3.67,
+    "esp32_f32_ms": 367.0,
+    "esp32_int8_ms": 45.9,
+    "f1_macro": 0.7484,
+    "verdict": "\u2705  GO",
+    "reason": "Deployable + real-time capable"
+  },
+  {
+    "model": "transformer",
+    "params": 151237,
+    "f32_kb": 590.8,
+    "int8_kb": 147.7,
+    "ram_kb": 203.0,
+    "pc_ms": 0.748,
+    "esp32_f32_ms": 74.8,
+    "esp32_int8_ms": 9.4,
+    "f1_macro": 0.7699,
+    "verdict": "\u2705  GO",
+    "reason": "Deployable + real-time capable"
+  },
+  {
+    "model": "kan",
+    "params": 142053,
+    "f32_kb": 554.9,
+    "int8_kb": 138.7,
+    "ram_kb": 191.1,
+    "pc_ms": 1.406,
+    "esp32_f32_ms": 140.6,
+    "esp32_int8_ms": 17.6,
+    "f1_macro": 0.8805,
+    "verdict": "\u2705  GO",
+    "reason": "Deployable + real-time capable"
+  },
+  {
+    "model": "convkan",
+    "params": 150629,
+    "f32_kb": 588.4,
+    "int8_kb": 147.1,
+    "ram_kb": 202.2,
+    "pc_ms": 1.372,
+    "esp32_f32_ms": 137.2,
+    "esp32_int8_ms": 17.1,
+    "f1_macro": 0.8537,
+    "verdict": "\u2705  GO",
+    "reason": "Deployable + real-time capable"
+  },
+  {
+    "model": "s4",
+    "params": 19013,
+    "f32_kb": 74.3,
+    "int8_kb": 18.6,
+    "ram_kb": 32.5,
+    "pc_ms": 2.065,
+    "esp32_f32_ms": 206.5,
+    "esp32_int8_ms": 25.8,
+    "f1_macro": 0.5373,
+    "verdict": "\u2705  GO",
+    "reason": "Deployable + real-time capable"
+  },
+  {
+    "model": "bigru",
+    "params": 398853,
+    "f32_kb": 1558.0,
+    "int8_kb": 389.5,
+    "ram_kb": 522.1,
+    "pc_ms": 24.848,
+    "esp32_f32_ms": 2484.8,
+    "esp32_int8_ms": 310.6,
+    "f1_macro": 0.8986,
+    "verdict": "\u274c  NO-GO",
+    "reason": "RAM overflow (522KB > 320KB) | Too slow (311ms > 100ms real-time limit)"
+  }
+]
