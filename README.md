@@ -96,6 +96,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## ✍️ Author
 
-**Richard Konsam** - North Eastern Regional Institute of Science and Technology (NERIST)
-**OMITTED MIT-BIH DATASET DUE TO LARGE SIZE**
-```
+**Richard Konsam** - North Eastern Regional Institute of Science and Technology (NERIST).
+
+
+**OMITTED MIT-BIH DATASET UPLOAD DUE TO LARGE SIZE**
